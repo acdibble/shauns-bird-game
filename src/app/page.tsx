@@ -20,7 +20,7 @@ export default function Home() {
     let birdImage = new Image();
     birdImage.src = "bird.svg"; // This should be the name of your SVG file
 
-    let canvas = document.getElementById("flappyBird");
+    let canvas = document.getElementById("flappyBird") as any;
     let ctx = canvas.getContext("2d");
     console.log(ctx);
 
@@ -31,7 +31,7 @@ export default function Home() {
       radius: 10,
     };
 
-    let pipes = [];
+    let pipes = [] as any[];
     let jump = -9;
     let score = 0;
 
